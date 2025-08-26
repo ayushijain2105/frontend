@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        p {
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 3px solid #0077b6;
+        }
+
+        a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            color: #023e8a;
+        }
+
+        ul {
+            max-width: 400px;
+            margin: auto;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            background: #90e0ef;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: #0077b6;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .links {
+            text-align: center;
+            margin: 20px;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #0077b6;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #023e8a;
+        }
+
+        audio, video {
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0077b6;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ayushi Jain</h1>
+</header>
+
+<p>Hello everyone, I am a passionate computer science student who loves coding, web development, and creating innovative projects. I am constantly improving my skills to achieve my career goals and fulfill my dreams.</p>
+
+<img src="myPhoto.jpg" alt="My Photo" width="200">
+
+<div class="links">
+    <p>
+        View my college location: 
+        <a href="https://maps.app.goo.gl/fTGMor5RPZrLM19t6" target="_blank">Click Here</a>
+    </p>
+    <p>
+        Connect with me on 
+        <a href="https://www.linkedin.com/in/ayushi-jain-993091291/" target="_blank">LinkedIn</a>
+    </p>
+</div>
+
+<h2>My Hobbies & Skills</h2>
+<ul>
+    <li>Coding</li>
+    <li>Web Development</li>
+    <li>Problem Solving</li>
+    <li>Photography</li>
+</ul>
+
+<h2>Education</h2>
+<table>
+    <tr>
+        <th>Year</th>
+        <th>Course</th>
+        <th>Institution</th>
+    </tr>
+    <tr>
+        <td>2023 - Present</td>
+        <td>B.Tech in CSE</td>
+        <td>GLA University</td>
+    </tr>
+    <tr>
+        <td>2020 - 2023</td>
+        <td>Higher Secondary</td>
+        <td>St. Conrads Inter College</td>
+    </tr>
+</table>
+
+<div class="links">
+    <p><a href="quiz.html" target="_blank">Give Quiz</a></p>
+    <p><a href="#top">Go to Top</a> | <a href="#bottom">Go to Bottom</a></p>
+</div>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<video width="640" height="360" controls>
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<form action="submit.php" method="post">
+    <input type="text" name="username" placeholder="Enter your name">
+    <input type="submit" value="Submit">
+</form>
+
+<footer id="bottom">
+    <p>&copy; 2025 Ayushi Jain | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
