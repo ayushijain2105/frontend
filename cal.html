@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Calculator</title>
+  <style>
+    /* Minimal, readable styles */
+    :root { --radius: 12px; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 24px; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f5f6f8; color: #111; display: grid; place-items: center; min-height: 100svh;
+    }
+    .calc {
+      width: 320px; background: #fff; border-radius: var(--radius); box-shadow: 0 6px 24px rgba(0,0,0,.08);
+      padding: 14px; border: 1px solid #eceff3;
+    }
+    .screen {
+      width: 100%; height: 64px; border: 0; outline: 0; background: #f8fafc; border-radius: 10px;
+      padding: 12px 14px; font-size: 28px; text-align: right; letter-spacing: .5px;
+    }
+    .keys {
+      margin-top: 12px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+    }
+    button {
+      appearance: none; border: 0; outline: 0; cursor: pointer; border-radius: 10px; padding: 14px 0;
+      font-size: 18px; background: #f1f5f9; transition: transform .02s ease-in, background .15s ease;
+    }
+    button:active { transform: scale(.98); }
+    .op { background: #e9f0ff; }
+    .action { background: #ffecec; }
+    .equals { background: #111; color: #fff; grid-column: span 2; }
+    .zero { grid-column: span 2; }
+  </style>
+</head>
+<body>
+  <main class="calc" aria-label="Simple calculator">
+    <input id="screen" class="screen" type="text" inputmode="decimal" placeholder="0" aria-label="display" readonly />
+
+    <section class="keys" aria-label="calculator keys">
+      <button class="action" data-key="clear" aria-label="All Clear">AC</button>
+      <button class="action" data-key="del" aria-label="Delete">DEL</button>
+      <button class="op" data-value="%" aria-label="Percent">%</button>
+      <button class="op" data-value="/" aria-label="Divide">÷</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="op" data-value="*" aria-label="Multiply">×</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="op" data-value="-" aria-label="Minus">−</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="op" data-value="+" aria-label="Plus">+</button>
+
+      <button class="zero" data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button class="equals" data-key="equals" aria-label="Equals">=</button>
+    </section>
+  </main>
+</body>
+</html>
